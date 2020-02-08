@@ -1,0 +1,168 @@
+---
+layout: default
+---
+
+<div class="jumbotron text-center">
+  <h2>Learn Smarter & Learn Better !</h2>
+  <p>The Dev-Hub For { } G33k's</p>
+
+
+</div>
+</div>
+
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon  glyphicon-indent-left logo"></span>
+    </div>
+    <div class="col-sm-8 text-center">
+      <h2>Want To Upgrade Your Proggraming ?</h2><br>
+      <h4>check out our weekly updated
+        free resources library For -> JAVA - HTML - CSS - JS - UI - UX
+        and much more .</h4><br>
+      <p>explore the most fundamental developer tips & tricks for building prograssive web apps, moblie apps, websites,
+        and much more.</p>
+      <br><button class="btn btn-default btn-lg">Take me there.</button>
+    </div>
+
+  </div>
+</div>
+
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-education logo slideanim"></span>
+    </div>
+    <div class="col-sm-8 text-center">
+      <h2>Free Courses For Beginner - developer's &nbsp; (with source code) </h2><br>
+      <h4><strong>MISSION:</strong> &nbsp; To help people who are strugling to learn programming . &nbsp;<strong> SPREAD
+          KNOWLEDGE</strong></h4><br>
+      <p><strong>VISION:</strong> &nbsp; To provide well-written free courses like :- Android fundamental, Web
+        essential, etc.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Services Section) -->
+<div id="services" class="container-fluid text-center">
+  <h1>Trending Dev Topics</h1>
+  <h4>Learning Flow</h4>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <i style="font-size:55px;color:dodgerblue" class="fa">&#xf17b;</i>
+      <h4>App Development</h4>
+      <p>Learn the fundamental's of building android app's</p>
+    </div>
+    <div class="col-sm-4">
+      <i style="font-size:55px;color:dodgerblue" class="fa">&#xf121;</i>
+      <h4>Web Development</h4>
+      <p>Learn about p-w-a , and creating full responsive website's</p>
+    </div>
+    <div class="col-sm-4">
+      <i style="font-size:55px;color:dodgerblue" class="fa">&#xf188;</i>
+      <h4>Debugging & Testing</h4>
+      <p>Learn the basics of testing app's and fixing bug's</p>
+    </div>
+  </div>
+  <br><br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <i style="font-size:55px;color:dodgerblue" class="fa">&#xf0c0;</i>
+      <h4>Distribute</h4>
+      <p>distribute app's to google play store & -ASO- </p>
+    </div>
+    <div class="col-sm-4">
+      <i style="font-size:55px;color:dodgerblue" class="fa">&#xf080;</i>
+      <h4>Manage Projects</h4>
+      <p>Better managment and further productivity tips</p>
+    </div>
+    <div class="col-sm-4">
+      <i style="font-size:55px;color:dodgerblue" class="fa">&#xf155;</i>
+      <h4>Earn Revenue</h4>
+      <p>Build your online bussiness & earn lifetime revenue </p>
+    </div>
+  </div>
+</div>
+
+
+
+<div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <h4>"This website is the best. I am so happy with the content!"<br><span>Michael , Vice , Comment </span></h4>
+    </div>
+    <div class="item">
+      <h4>"One word... WOW!!"<br><span>John , Saly, Rep Inc</span></h4>
+    </div>
+    <div class="item">
+      <h4>"Could I... BE any more happy with this company?"<br><span>Chandler Bing, Actor, FriendsAlot</span></h4>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+
+
+
+
+
+<script>
+  $(document).ready(function () {
+    // Add smooth scrolling to all links in navbar + footer link
+    $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 900, function () {
+
+          // Add hash (#) to URL when done scrolling (default click behavior)
+
+        });
+      } // End if
+    });
+
+    $(window).scroll(function () {
+      $(".slideanim").each(function () {
+        var pos = $(this).offset().top;
+
+        var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+      });
+    });
+  })
+</script>
+
+</body>
+
+</html>
