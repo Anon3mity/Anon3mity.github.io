@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 
 <html lang="en">
-
+<header>
 {% include head.html %}
 
-
+</header>
 
 
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
-  <div class="container-fluid bg-grey">
+  <div class="container-fluid ">
    
   {{content}}
  
 </div>
-
+<footer class="container-fluid">
+  {% include footer.html %}
+  </footer>
 </body>
-{% include footer.html %}
 
 </html>
