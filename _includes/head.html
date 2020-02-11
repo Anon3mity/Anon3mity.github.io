@@ -4,9 +4,10 @@
           <meta name="viewport" content="width=device-width, initial-scale=1">
           
           <title>Anon3m!ty . {{page.title}} </title>
-          {% include html_code.html %}
-          
+        {% seo %}
          
+          <link rel="icon" href="/favicon.png" type="image/png">
+         {% feed_meta %}
           
           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -18,24 +19,4 @@
           <script data-ad-client="ca-pub-9569082696306495" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         </head>
         <body>
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>                        
-        </button>
-        <a class="navbar-brand" href="{{site.baseurl}}/">Anon3m!ty</a>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="{{site.baseurl}}/blog">Blog</a></li>
-          <li><a href="{{site.baseurl}}/404.html">Courses</a></li>
-          <li><a href="{{site.baseurl}}/about">About</a></li>
-          <li><a href="#pricing">Privacy</a></li>
-          
-        </ul>
-      </div>
-    </div>
-  </nav>
+ 
