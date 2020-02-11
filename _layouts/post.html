@@ -1,9 +1,33 @@
 ---
 layout: default
 ---
-<div class="container-fluid">
-<h1>{{ page.title }}</h1>
-<p>{{ page.date | date_to_string }} - {{ page.author }}</p>
 
-{{ content }}
+<div class="container-fluid">
+<div style="padding:15px;text-align:center;">
+    <h1>{{ page.title }}</h1>
+    <p>{{ page.date | date_to_string }} - {{ page.author }}</p>
+  </div>
+  
+  <div style="overflow:auto">
+    <div class="menu">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+      <a href="#">Link 4</a>
+    </div>
+  
+    <div class="main">
+        <div class="container-fluid">
+        {{ content }}
+    </div>
+    </div>
+  
+    <div class="rights">
+      <h2>About</h2>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+    </div>
 </div>
+<div>
+
+
+

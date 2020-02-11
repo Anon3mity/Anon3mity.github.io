@@ -4,18 +4,43 @@ title: blogs
 ---
 
 
-
-    <div class="container-fluid bg-grey">
-        {% for post in site.posts %}
-        <article>
-          <h2>
-            <a href="{{ post.url }}">
-              {{ post.title }}
-            </a>
-          </h2>
-          {{ post.excerpt }}
-        </article>
-      {% endfor %}
+<div class="container-fluid" style="background-color: #1d1e22;">
+  <div style="padding:15px;text-align:center;">
+      <h1>{{ page.title }}</h1>
+      
+    </div>
+    
+    <div style="overflow:auto">
+      <div class="menu">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        <a href="#">Link 4</a>
       </div>
+    
+      <div class="main">
+        <div class="container-fluid bg-grey">
+          {% for post in site.posts %}
+          <article>
+            <h2>
+              <a href="{{ post.url }}">
+                {{ post.title }}
+              </a>
+            </h2>
+            {{ post.excerpt }}
+          </article>
+        {% endfor %}
+        </div>
+      </div>
+    
+      <div class="rights">
+        <h2>About</h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+      </div>
+      </div>
+  </div>
+</div>
+
+    
     
 
