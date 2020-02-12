@@ -127,7 +127,7 @@ footer .glyphicon {
   }
   
   .header {
-    background-color: #141414;
+    background-color: #121212;
     color: #ffffff;
     padding: 15px;
   }
@@ -182,14 +182,44 @@ footer .glyphicon {
     width: 90%;
 
   }
-  .menu li {
- 
-    float: left;
-    margin-left: 70px;
-    
-    
-    
-  }
+  
+}
+.collapsible {
+  background-color: #406d4a;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: 1px;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  border-radius: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #1a301f;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: #121212;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  border-radius: 15px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #121212;
 }
 .w3-container {
   border-radius: 15px;
@@ -228,6 +258,5 @@ footer .glyphicon {
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
   }
-
 
 
