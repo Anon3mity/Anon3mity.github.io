@@ -21,8 +21,7 @@
       <meta name="google-site-verification" content="uK2kKkMHizTNO9q243I4O5iLXFVywKy3n3TGCsoWd1g" >
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link href="{{stie.baseurl}}/css/common.css" rel="stylesheet">
-    <script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
    
     </head>
  <header>
@@ -38,26 +37,27 @@ id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
  
    
   {{content}}
- 
-
+  <script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+      });
+    }
+    </script>
 <div class="container-fluid fixed-bottom">
   {% include footer.html %}
 </div>
 </body>
-<script>
-  var coll = document.getElementsByClassName("collapsible");
-  var i;
-  
-  for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function() {
-      this.classList.toggle("active");
-      var content = this.nextElementSibling;
-      if (content.style.maxHeight){
-        content.style.maxHeight = null;
-      } else {
-        content.style.maxHeight = content.scrollHeight + "px";
-      } 
-    });
-  }
-  </script>
+
 </html>
