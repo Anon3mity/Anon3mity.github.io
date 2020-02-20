@@ -28,12 +28,16 @@ url: "https://anon3mity.github.io" # the base hostname & protocol for your site,
 twitter_username: 
 github_username:  
 
+
+
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
+
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
