@@ -2,70 +2,112 @@
 layout: default
 title: blog
 ---
+<style>
 
 
-<div class="container-fluid text-center" style="background-color: #1d1e22;">
-  <div class="header">
-    
-    <div class="container-fluid" style="background-color: #121212 ;">
-      <img src="/assets/header.png" alt="header" style="width: 50%;"/>
-      
-      </div>
-    
+/* Header/Blog Title */
+
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+
+/* Add a card effect for articles */
+.card {
+   background-color: #121212;
+   padding: 20px;
+   border-radius: 15px;
+   margin-top: 20px;
+   margin-left: 15px;
+   margin-right: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+
+
+
+<div class="jumbotron text-center">
+  <div class="container">
+    <h2>"Learning is the key of succsess."</h2>
+    <img class="mx-auto d-block img-fluid" src="{{site.baseurl}}/favicon.png" alt="header"/>
+    <p>The Dev-Hub For { } Geek's</p>
   </div>
-  
-  <div class="row">
-    <div class="col-3 col-s-3 menu">
-      
-<button class="collapsible ">Catagories</button>
-<div class="content">
-  <ul>
-    <li>Most Recents</li>
-    <li>Android</li>
-    <li>Web</li>
-    <li>Debugging</li>
-  </ul>
+
 </div>
-  </div>
-  
-    <div class="col-6 col-s-9">
-    
-      {% for post in site.posts %}
-      <div class="container-fluid">
+
+<div class="container-fluid"  style=" background-color:#000000; border-radius: 0%; margin: 0;">
+<div class="row">
+  <div class="leftcolumn">
+    {% for post in site.posts %}
+
+    <div class="card text-center">
       <h1><a href="{{ post.url }}">
         {{ post.title }}
       </a></h1>
-      <h5>{{ post.date | date_to_long_string }}</h5>
+
       <hr>
-      
       <p>{{ post.excerpt}}</p>
-      
-      
-      <p><a  href="{{ post.url }}" class="w3-button-small w3-round-xlarge #1d1e22 w3-block"><i class="fa fa-angle-double-right"></i> Take A Look</a></p>
-      
-      
-    </div>
-      {% endfor %}
-    
+     
+
+    <div>
+      <div class="pull-right"><span class="label label-default">alice</span> <span class="label label-primary">story</span> <span class="label label-success">blog</span> <span class="label label-info">personal</span> <span class="label label-warning">Warning</span>
+<span class="label label-danger">Danger</span></div>
     </div>
   
-    <div class="col-3 col-s-12">
-      <div class="aside">
-        <h2>Tags</h2>
-        <hr>
-        <div class="w3-tag w3-round w3-green w3-tiny" style="margin-top:5px;padding: 3px;">
-          <div class="w3-tag w3-round w3-green w3-border w3-border-white">
-            {% for post in site.posts %}
-            {{post.categories}}
-            {% endfor %}
-          </div>
-        </div>
-  
-      
-      </div>
+    <hr>
     </div>
-  
-    </div>
-  
+    {% endfor %} 
   </div>
-  
+     
+
+
+
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <div class="fakeimg" style="height:100px;">Image</div>
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg">Image</div><br>
+      <div class="fakeimg">Image</div><br>
+      <div class="fakeimg">Image</div>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>Some text..</p>
+    </div>
+  </div>
+</div>
+
+</div>
