@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: pages
 title: Privacy Policy for Anon3m!ty
 permalink: /privacy
 --- 

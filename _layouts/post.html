@@ -1,0 +1,36 @@
+---
+layout: default
+---
+    <div class="article-clean">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-xl-8 offset-lg-1 offset-xl-2">
+                    <div class="intro">
+                        <h1 class="text-center">{{page.title}}</h1>
+                        <p class="text-center">{{page.categories}} <a href="#"></a><span class="date">{{page.date}} </span></p><img class="img-fluid" src="/assets/img/desk.jpg"></div>
+                    <div class="text">
+                        {{content}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="pagi">  <ul class="pagination justify-content-center">
+    <li class="page-item ">
+        {% if page.previous.url %}
+        <a class="page-link" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
+        {% endif %}
+    </li>
+   
+    <li class="page-item">
+        {% if page.previous.url %}
+        <a class="page-link" href="{{page.next.url}}">&raquo; {{page.next.title}}</a>
+        {% endif %}
+    </li>
+  </ul>
+
+</div>
+    <ul class="list-group">
+        <li class="list-group-item"><span>Related Posts</span></li>
+    </ul>
+ 

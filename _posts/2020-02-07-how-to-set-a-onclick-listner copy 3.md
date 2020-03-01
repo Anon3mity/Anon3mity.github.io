@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "On Click Change Activity"
+title:  "Change Activity"
 date:   2020-02-07 12:41:02 +0530
 categories: android
 ---
