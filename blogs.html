@@ -21,6 +21,7 @@ layout: default
                 {% for post in site.posts %}
                 <div class="col-sm-6 col-md-4 item"><a href="#"><img class="img-fluid" src="/assets/img/desk.jpg"></a>
                     <h3 class="name">{{post.title}}</h3>
+                    <p class="text-left" id="tags"><i class="fa fa-tags"></i>&nbsp; {{post.categories}}</p>
                     <p class="description">{{post.excerpt}}</p><a class="action" href="{{post.url}}"><i class="fa fa-arrow-circle-right"></i></a></div>
               {% endfor %}
     
