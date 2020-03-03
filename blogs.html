@@ -20,7 +20,7 @@ layout: default
             <div class="row articles">
                 {% for post in site.posts %}
                 <div class="col-sm-6 col-md-4 item">  {% if page.image %}
-                    <img class="image" src={{ page.image }} alt="Feature Image"/>
+                    <img src={{ page.image }} alt="Feature Image"/>
                   {% endif %}<a href="#"><img class="img-fluid" src="/assets/img/desk.jpg"></a>  
                     <h3 class="name">{{post.title}}</h3>
                     <p class="text-left" id="tags"><i class="fa fa-tags"></i>&nbsp; {{post.categories}}</p>
