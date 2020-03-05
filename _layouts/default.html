@@ -2,21 +2,22 @@
 title: home
 ---
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
     <head>
-{% include head.html %}
-</head>
+     {% include head.html %}
+    </head>
 
-<body>
+       <body>
+          <header>
+             {% include nav.html %}
+             {% include header.html %}
+          </header>
+             {{content}}
 
-<header>
-    {% include nav.html %}
-    {% include header.html %}
-</header>
-
-{{content}}
-
-{% include footer.html %}
-</body>
+          <footer>
+             {% include footer.html %}
+          </footer>
+        </body>
 
 </html>

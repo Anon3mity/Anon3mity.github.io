@@ -2,21 +2,22 @@
 title: blogs
 ---
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-<head>
-{% include head.html %}
-</head>
+    <head>
+     {% include head.html %}
+    </head>
 
-<body>
-    <header>
-        {% include nav.html %}
-       {% include header.html %}
-       </header>
-       <div>
-    {{content}}
-    <div>
-       {% include footer.html %}
-</body>
+       <body>
+          <header>
+             {% include nav.html %}
+             {% include header.html %}
+          </header>
+             {{content}}
+       
+          <footer>
+             {% include footer.html %}
+          </footer>
+        </body>
 
 </html>

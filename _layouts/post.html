@@ -1,61 +1,54 @@
 ---
 title: {{page.title}}
 ---
-<!DOCTYPE html>
+<html lang="en">
 <html>
 
-<head>
-    {% include head.html %}
-</head>
+    <head>
+     {% include head.html %}
+    </head>
 
-
-<body>
-  
-    <header>
-        {% include nav.html %}
-        {% include header.html %}
-    {% include breadcrumbs.html %}
-    </header>
+    <body>
+       <header>
+         {% include nav.html %}
+         {% include header.html %}
+         {% include breadcrumbs.html %}
+       </header>
     
-    <div class="col">
+      <div class="col">
         <div class="intro">
-            <h1 class="text-center" style="font-family: 'Alegreya SC', serif;">{{page.title}}</h1>
-            <p class="text-center"> </p>
+          <h1 class="text-center" style="font-family: 'Alegreya SC', serif;">{{page.title}}</h1>
         </div>
-    </div>
-</div>
-</div>
+      </div>
+
+
    
-        <div class="row">
-            <div class="col-sm-2"><i class="fa fa-tags d-sm-flex justify-content-sm-end"></i></div>
-            <div class="col-sm-6">
-                <p class="d-sm-flex justify-content-sm-start">anon3m!ty</p>
-             
-            </div>
-        </div>
+      <div class="row">
+        <div class="col-sm-2"><i class="fa fa-tags d-sm-flex justify-content-sm-end"></i></div>
+          <div class="col-sm-6">
+             <p class="d-sm-flex justify-content-sm-start">anon3m!ty</p>
+             </div>
     </div>
-                       
-    <div class="container" style="margin-top:20px;">
-       
-                        {{content}}
-    </div>
-    <div id="pagi">  <ul class="pagination justify-content-center">
-    <li class="page-item ">
+    
+ <div class="container" style="margin-top:20px;">
+       {{content}}
+   </div>
+    
+   <div id="pagi">  <ul class="pagination justify-content-center">
+     <li class="page-item ">
         {% if page.previous.url %}
         <a class="page-link" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
         {% endif %}
-    </li>
+     </li>
    
     <li class="page-item">
         {% if page.previous.url %}
         <a class="page-link" href="{{page.next.url}}">&raquo; {{page.next.title}}</a>
         {% endif %}
     </li>
-  </ul>
-
+    </ul>
 </div>
-   
-{% include footer.html%}
+   {% include footer.html%}
 </body>
 
 </html>
