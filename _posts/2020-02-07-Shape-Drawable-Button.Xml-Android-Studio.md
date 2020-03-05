@@ -2,11 +2,12 @@
 layout: post
 title:  "use xml layout for ui designing"
 date:   2020-02-07 12:41:02 +0530
-categories: #android #ui
+categories: android , ui
+feature-img: "/assets/img/desk.jpg"
 meta: Shape drawable is nothing more just a collection of .xml  file's with that you can create your own awesome Custom_Button as well as you can create more with that. 
 ---
 
- #hello_Cod3rs 
+ #hello_Cod3rs.
 in this tutorial we will learn how we can use xml files to customize our own button
 so open up android studio then we need to create a new resource file so for that we will go intro res > drawable then we will right click on the drawable folder and pick a new resources file from the new section the first option on the popup menu. as you can see below.
 
