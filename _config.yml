@@ -23,7 +23,7 @@ email: dev.anon3mity@gmail.com
 description: learn trending developer topics and kick start your developer bussiness
 
 permalink: pretty  
-baseurl: "/"
+baseurl: ""
 url: "https://anon3mity.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
 github_username:  

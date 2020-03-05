@@ -3,7 +3,6 @@ layout: post
 title:  "use xml layout for ui designing"
 date:   2020-02-07 12:41:02 +0530
 categories: #android #ui
-image: https://drive.google.com/file/d/1OfI2AIPFLItNHC9XxqL5nCTruG7lOcgD/view?usp=sharing
 meta: Shape drawable is nothing more just a collection of .xml  file's with that you can create your own awesome Custom_Button as well as you can create more with that. 
 ---
 
