@@ -44,13 +44,6 @@ google_analytics: UA-159979311-1
 
 
  
----
-title: Jekyll Redirect 301
-redirect_from:
-  - /blogs/
-  
-permalink: /https://anon3mity.github.io/
----
 
 # Exclude from processing.
 # The following items will not be processed, by default.
