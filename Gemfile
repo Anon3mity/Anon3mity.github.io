@@ -15,7 +15,7 @@ gem "minima", "~> 2.5"
 # gem "github-pages", group: :jekyll_plugins
 # If you have any plugins, put them here!
 gem 'jekyll-sitemap'
-
+gem 'jekyll-redirect-from'
 
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"

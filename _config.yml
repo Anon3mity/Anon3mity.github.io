@@ -20,13 +20,15 @@
 
 title: Anon3m!ty
 email: dev.anon3mity@gmail.com
-description: learn trending developer topics and kick start your developer bussiness
+description: learn trending developer topics and kick start your developer business.
 
 permalink: pretty  
 baseurl: ""
-url: "https://anon3mity.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://anon3mity.github.io"
 twitter_username: 
-github_username:  
+github_username:  Anon3m!ty
+
+
 
 
 
@@ -36,8 +38,19 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-redirect-from
+
+google_analytics: UA-159979311-1
 
 
+ 
+---
+title: Jekyll Redirect 301
+redirect_from:
+  - /404.html/
+  
+permalink: /https://anon3mity.github.io/
+---
 
 # Exclude from processing.
 # The following items will not be processed, by default.
