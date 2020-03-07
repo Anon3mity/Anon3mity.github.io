@@ -47,7 +47,7 @@ google_analytics: UA-159979311-1
 ---
 title: Jekyll Redirect 301
 redirect_from:
-  - /404.html/
+  - /blogs/
   
 permalink: /https://anon3mity.github.io/
 ---
