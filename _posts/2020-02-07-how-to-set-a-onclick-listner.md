@@ -3,7 +3,7 @@ layout: post
 title:  "Activity"
 date:   2020-02-07 12:41:02 +0530
 categories: android
-feature-img: "/assets/img/main.png"
+feature-img: "/assets/img/main.webp"
 meta: Shape drawable is nothing more just a collection of .xml  .
 ---
 
