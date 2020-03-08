@@ -42,7 +42,8 @@ plugins:
 
 google_analytics: UA-159979311-1
 
-
+sass:
+  style: compressed 
  
 
 # Exclude from processing.
