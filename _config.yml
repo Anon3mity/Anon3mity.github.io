@@ -33,7 +33,7 @@ github_username:  Anon3m!ty
 
 
 # Build settings
-theme: minima
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
