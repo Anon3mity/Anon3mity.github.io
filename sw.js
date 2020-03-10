@@ -1,5 +1,5 @@
 // sw.js
-
+importScripts('https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js');
 // set names for both precache & runtime cache
 workbox.core.setCacheNameDetails({
     prefix: 'anon3mity.github.io',
