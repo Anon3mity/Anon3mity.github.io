@@ -39,12 +39,24 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-redirect-from
+  - jekyll-workbox-plugin
 
 google_analytics: UA-159979311-1
 
-sass:
-  style: compressed 
- 
+workbox:
+  sw_src_filepath: sw.js # Optional
+  sw_dest_filename: sw.js # Optional
+  precache_recent_posts_num: 5 # Optional
+  precache_glob_directory: / # Optional
+  precache_glob_patterns: # Optional
+    - "{js,css,fonts}/**/*.{js,css,eot,svg,ttf,woff}"
+    - index.html
+    - "about.html": # This entry aliases about/ and contact/ to about.html
+        - about/
+        
+  precache_glob_ignores: # Optional
+    - "fonts/**/*"
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
