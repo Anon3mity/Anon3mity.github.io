@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "io.github.anon3mity",
+    "sha256_cert_fingerprints":
+    ["07:39:4F:E2:EE:66:AD:F5:15:95:E4:75:2B:9E:CB:C3:1C:58:6D:E6:13:C9:91:45:4C:70:6F:57:30:25:23:40"]
+  }
+}]

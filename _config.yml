@@ -57,6 +57,7 @@ workbox:
   precache_glob_ignores: # Optional
     - "fonts/**/*"
 
+include: [".well-known"]
 
 # Exclude from processing.
 # The following items will not be processed, by default.
