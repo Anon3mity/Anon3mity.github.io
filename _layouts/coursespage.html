@@ -1,35 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-     {% include head.html %}
-    </head>
+<head>
+  {% include head.html %}
+</head>
 
-    
-    <body style="font-family: 'Alegreya SC', serif;">
 
-      <header>
-        {% include nav.html %}
-     </header>
+<body style="font-family: 'Alegreya SC', serif;">
 
-     {{content}}
+  <header>
+    {% include nav.html %}
+  </header>
 
-     <footer>
-      {% include footer.html %}
-     </footer>
+  {{content}}
 
-       {% include analytics.html  %}
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
-      <script src="/assets/js/script.min.js"></script>
-      <script>
-            if ('serviceWorker' in navigator) {
-              window.addEventListener('load', function() {
-                  navigator.serviceWorker.register('/sw.js');
-              });
-            }
-          </script>
+  <footer>
+    {% include footer.html %}
+  </footer>
 
-  </body>
+  {% include analytics.html  %}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+  <script src="/assets/js/script.min.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('/sw.js');
+      });
+    }
+  </script>
+
+</body>
+
 </html>
