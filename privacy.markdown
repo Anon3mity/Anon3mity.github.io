@@ -4,7 +4,7 @@ title: Privacy
 permalink: /privacy
 --- 
 
- # Privacy Policy for Anon3m!ty
+ #Privacy Policy for Anon3m!ty
 
 <p>At Anon3m!ty, accessible from https://anon3mity.github.io/, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Anon3m!ty and how we use it.</p>
 
