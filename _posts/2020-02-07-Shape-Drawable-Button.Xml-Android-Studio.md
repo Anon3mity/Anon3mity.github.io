@@ -5,7 +5,7 @@ date:   2020-02-07 12:41:02 +0530
 categories: android , ui
 feature-img: "/assets/img/desk.jpg"
 meta: Shape drawable is nothing more just a collection of .xml  file's with that you can create your own awesome Custom_Button as well as you can create more with that. 
-permalink: /blog/false/
+
 ---
 
  #hello_Cod3rs.
