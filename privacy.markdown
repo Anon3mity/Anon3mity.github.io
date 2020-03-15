@@ -1,7 +1,6 @@
 ---
-layout: post
+layout: page
 title: Privacy
-permalink: /privacy
 --- 
 
  #Privacy Policy for Anon3m!ty
