@@ -41,9 +41,9 @@ layout: blogpage
     </div>
     
     <div class="card-group text-center" id="card-view">
-        
+        {% for post in site.posts %}
         <div class="card">
-            {% for post in site.posts %}
+            
            
             <div class="card-body" id="card"><img id="post-img" src="/assets/img/1.jpeg" width="120" alt="post-img1">
                 <h4 class="card-title" id="post-title">{{post.title}}</h4>
