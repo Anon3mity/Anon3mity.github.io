@@ -39,10 +39,11 @@ layout: blogpage
             </div>
         </div>
     </div>
-    {% for post in site.posts %}
+    
     <div class="card-group text-center" id="card-view">
         
         <div class="card">
+            {% for post in site.posts %}
            
             <div class="card-body" id="card"><img id="post-img" src="/assets/img/1.jpeg" width="120" alt="post-img1">
                 <h4 class="card-title" id="post-title">{{post.title}}</h4>
@@ -50,8 +51,8 @@ layout: blogpage
                 <div
                     class="text-right"><i class="fas fa-laptop-code" id="post-tag"></i></div>    
         </div>
+        {% endfor %}
     </div>
-    {% endfor %}
     </div>
 
 </section>
