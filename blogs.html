@@ -41,28 +41,15 @@ layout: blogpage
     </div>
     <div class="card-group text-center" id="card-view">
         <div class="card">
+            {% for post in site.posts %}
             <div class="card-body" id="card"><img id="post-img" src="/assets/img/1.jpeg" width="120" alt="post-img1">
-                <h4 class="card-title" id="post-title">WEbx</h4>
-                <p class="card-text" id="post-meta">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p><button class="btn btn-primary" type="button">check it out&nbsp;&nbsp;<i class="fas fa-sliders-h"></i></button>
+                <h4 class="card-title" id="post-title">{{post.title}}</h4>
+                <p class="card-text" id="post-meta">{{post.meta}}</p><button class="btn btn-primary" type="button">check it out&nbsp;&nbsp;<i class="fas fa-sliders-h"></i></button>
                 <div
                     class="text-right"><i class="fas fa-laptop-code" id="post-tag"></i></div>
+                    {% endfor %}
         </div>
     </div>
-    <div class="card">
-        <div class="card-body" id="card"><img id="post-img" src="/assets/img/1.jpeg" width="120" alt="post-img2">
-            <h4 class="card-title" id="post-title">WEbx</h4>
-            <p class="card-text" id="post-meta" style="font-family: 'Alegreya SC', serif;">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p><button class="btn btn-primary" type="button">check it out&nbsp;&nbsp;<i class="fas fa-sliders-h"></i></button>
-            <div
-                class="text-right"><i class="fas fa-laptop-code" id="post-tag"></i></div>
-    </div>
-    </div>
-    <div class="card">
-        <div class="card-body" id="card"><img id="post-img" src="/assets/img/1.jpeg" width="120" alt="post-img">
-            <h4 class="card-title" id="post-title">WEbx</h4>
-            <p class="card-text" id="post-meta">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p><button class="btn btn-primary" type="button">check it out&nbsp;&nbsp;<i class="fas fa-sliders-h"></i></button>
-            <div
-                class="text-right"><i class="fas fa-laptop-code" id="post-tag"></i></div>
-    </div>
-    </div>
+    
     </div>
 </section>
