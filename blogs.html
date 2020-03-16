@@ -39,19 +39,18 @@ layout: blogpage
             </div>
         </div>
     </div>
+    {% for post in site.posts %}
     <div class="card-group text-center" id="card-view">
-        {% for post in site.posts %}
+        
         <div class="card">
            
             <div class="card-body" id="card"><img id="post-img" src="/assets/img/1.jpeg" width="120" alt="post-img1">
                 <h4 class="card-title" id="post-title">{{post.title}}</h4>
                 <p class="card-text" id="post-meta">{{post.meta}}</p><button class="btn btn-primary" type="button">check it out&nbsp;&nbsp;<i class="fas fa-sliders-h"></i></button>
                 <div
-                    class="text-right"><i class="fas fa-laptop-code" id="post-tag"></i></div>
-                   
+                    class="text-right"><i class="fas fa-laptop-code" id="post-tag"></i></div>    
         </div>
-        {% endfor %}
     </div>
-   
     </div>
+    {% endfor %}
 </section>
