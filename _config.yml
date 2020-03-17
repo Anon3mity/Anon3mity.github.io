@@ -31,7 +31,8 @@ github_username:  Anon3m!ty
 
 
 
-
+collections:
+  apps:
 # Build settings
 
 plugins:
