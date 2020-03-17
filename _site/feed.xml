@@ -1,53 +1,50 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-03-16T06:58:24+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Anon3m!ty</title><subtitle>latest development trending topics &amp;amp; free courses, video tutorials to help people who having problem's learning code.</subtitle><entry><title type="html">Activity</title><link href="http://localhost:4000/android/2020/02/07/how-to-set-a-onclick-listner/" rel="alternate" type="text/html" title="Activity" /><published>2020-02-07T12:41:02+05:30</published><updated>2020-02-07T12:41:02+05:30</updated><id>http://localhost:4000/android/2020/02/07/how-to-set-a-onclick-listner</id><content type="html" xml:base="http://localhost:4000/android/2020/02/07/how-to-set-a-onclick-listner/">&lt;p&gt;in this post you will learn how use OnClickListner in your .java project in Android studio
-and open an activity  with that button using  OnClickListner  method
-have prepared an app example of the onclicklistner method So Lets quickly get to the Tut
-knfkdnfkdkwfmkmflslfkdlkfdlf ldkl l w
-knfkdnfkdkwfmkmflslfkdlkfdlf ldkl l w
-knfkdnfkdkwfmkmflslfkdlkfdlf ldkl l w
-knfkdnfkdkwfmkmflslfkdlkfdlf ldkl l w
-knfkdnfkdkwfmkmflslfkdlkfdlf ldkl l w
-knfkdnfkdkwfmkmflslfkdlkfdlf ldkl l w&lt;/p&gt;</content><author><name></name></author><summary type="html">in this post you will learn how use OnClickListner in your .java project in Android studio and open an activity with that button using OnClickListner method have prepared an app example of the onclicklistner method So Lets quickly get to the Tut knfkdnfkdkwfmkmflslfkdlkfdlf ldkl l w knfkdnfkdkwfmkmflslfkdlkfdlf ldkl l w knfkdnfkdkwfmkmflslfkdlkfdlf ldkl l w knfkdnfkdkwfmkmflslfkdlkfdlf ldkl l w knfkdnfkdkwfmkmflslfkdlkfdlf ldkl l w knfkdnfkdkwfmkmflslfkdlkfdlf ldkl l w</summary></entry><entry><title type="html">use xml layout for ui designing</title><link href="http://localhost:4000/android/,/ui/2020/02/07/Shape-Drawable-Button.Xml-Android-Studio/" rel="alternate" type="text/html" title="use xml layout for ui designing" /><published>2020-02-07T12:41:02+05:30</published><updated>2020-02-07T12:41:02+05:30</updated><id>http://localhost:4000/android/,/ui/2020/02/07/Shape-Drawable-Button.Xml-Android-Studio</id><content type="html" xml:base="http://localhost:4000/android/,/ui/2020/02/07/Shape-Drawable-Button.Xml-Android-Studio/">&lt;p&gt;#hello_Cod3rs.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-03-17T11:25:57+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Anon3m!ty</title><subtitle>latest development trending topics &amp;amp; create powerfull apps free courses, video tutorials to help people who having problem's learning code learn better &amp; smarter.</subtitle><entry><title type="html">use xml layout for ui designing</title><link href="http://localhost:4000/android/ui/2020/02/07/Shape-Drawable-Button.Xml-Android-Studio/" rel="alternate" type="text/html" title="use xml layout for ui designing" /><published>2020-02-07T12:41:02+05:30</published><updated>2020-02-07T12:41:02+05:30</updated><id>http://localhost:4000/android/ui/2020/02/07/Shape-Drawable-Button.Xml-Android-Studio</id><content type="html" xml:base="http://localhost:4000/android/ui/2020/02/07/Shape-Drawable-Button.Xml-Android-Studio/">&lt;p&gt;# hello_Cod3rs
 in this tutorial we will learn how we can use xml files to customize our own button
 so open up android studio then we need to create a new resource file so for that we will go intro res &amp;gt; drawable then we will right click on the drawable folder and pick a new resources file from the new section the first option on the popup menu. as you can see below.&lt;/p&gt;
 
 &lt;p&gt;we will name this file as our button_default then we hit ok after that we will have our first button_default.xml file so for this example we’ill need three .xml file’s but as for now we will work on this .xml file i will tell you  more as we go further in this tutorial.&lt;/p&gt;
 
-&lt;p&gt;button_default.xml&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;## button_default.xml&lt;/p&gt;
 
 &lt;p&gt;we change the default attribute to shape and give it another attribute android:shape=”rectangle”&amp;gt; and then we add another attribute &amp;lt;gradient in this we give end color and start color&lt;/p&gt;
 
-&lt;p&gt;android:startColor=”#0000ff”
-android:endColor=”#fff”&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;xml&lt;/code&gt;
+android:startColor=”#0000ff”
+android:endColor=”#fff”
+&lt;code class=&quot;highlighter-rouge&quot;&gt;xml&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;for our gradient effect then we give some padding and a stroke,Corner’s as you can see below&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;android:shape=&quot;rectangle&quot;
-&amp;gt;
-&amp;amp;lt;gradient
-    android:startColor=&quot;#0000ff&quot;
-    android:endColor=&quot;#fff&quot;
-    /&amp;gt;
-    &amp;amp;lt;padding
-        android:bottom=&quot;7dp&quot;
-        android:top=&quot;7dp&quot;
-        android:right=&quot;7dp&quot;
-        android:left=&quot;7dp&quot;/&amp;gt;
-&amp;amp;lt;stroke
-    android:width=&quot;2dp&quot;
-    android:color=&quot;#9C27B0&quot;/&amp;gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;xml&lt;/code&gt;
+    android:shape=”rectangle”
+    &amp;gt;
+    &amp;lt;gradient
+        android:startColor=”#0000ff”
+        android:endColor=”#fff”
+        /&amp;gt;
+        &amp;lt;padding
+            android:bottom=”7dp”
+            android:top=”7dp”
+            android:right=”7dp”
+            android:left=”7dp”/&amp;gt;
+    &amp;lt;stroke
+        android:width=”2dp”
+        android:color=”#9C27B0”/&amp;gt;&lt;/p&gt;
 
-&amp;amp;lt;corners android:radius=&quot;15dp&quot;/&amp;gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;amp;lt;corners android:radius=&quot;15dp&quot;/&amp;gt; ```xml```
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;after completing our default_button.xml we copy all the codes for our two other .Xml file’s as i mentioned above so we go to our drawable folder again and create another resource file as button_disabled and we paste our code in it. then simply we change our color’s to gray as you can see below (for creating a disabled effect).&lt;/p&gt;
 
 &lt;h2 id=&quot;button_disabledxml&quot;&gt;button_disabled.xml&lt;/h2&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;android:shape=&quot;rectangle&quot;
-&amp;gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;xml&lt;/code&gt;
+    android:shape=”rectangle”
+    &amp;gt;&lt;/p&gt;
 
-
-&amp;amp;lt;solid
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;amp;lt;solid
     android:color=&quot;#b6b7b5&quot;
     /&amp;gt;
 
@@ -60,21 +57,22 @@ android:endColor=”#fff”&lt;/p&gt;
     android:width=&quot;2dp&quot;
     android:color=&quot;#9C27B0&quot;/&amp;gt;
 
-&amp;amp;lt;corners android:radius=&quot;15dp&quot;/&amp;gt;
+&amp;amp;lt;corners android:radius=&quot;15dp&quot;/&amp;gt; ```xml```
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;After that we create our 3rd resource file button_pressed.xml and again pase all code as we did earlier in the button_disabled.xml and just change the gradient color for a (pressed effect).
-&lt;!-- /wp:paragraph --&gt;&lt;/p&gt;
+&lt;p&gt;After that we create our 3rd resource file button_pressed.xml and again pase all code as we did earlier in the button_disabled.xml and just change the gradient color for a (pressed effect).&lt;/p&gt;
 
-&lt;p&gt;android:startColor=”#03A9F4”&lt;br /&gt;android:endColor=”#fff”&amp;lt;/pre&amp;gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;xml&lt;/code&gt;
+android:startColor=”#03A9F4”&lt;br /&gt;android:endColor=”#fff”&amp;lt;/pre&amp;gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;xml&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;button_pressed.xml&lt;/p&gt;
+&lt;h2 id=&quot;button_pressedxml&quot;&gt;button_pressed.xml&lt;/h2&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;android:shape=&quot;rectangle&quot;
-&amp;gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;xml&lt;/code&gt;
+    android:shape=”rectangle”
+    &amp;gt;&lt;/p&gt;
 
-
-&amp;amp;lt;gradient
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;amp;lt;gradient
     android:startColor=&quot;#03A9F4&quot;
     android:endColor=&quot;#fff&quot;
     /&amp;gt;
@@ -88,30 +86,35 @@ android:endColor=”#fff”&lt;/p&gt;
     android:width=&quot;2dp&quot;
     android:color=&quot;#9C27B0&quot;/&amp;gt;
 
-&amp;amp;lt;corners android:radius=&quot;15dp&quot;/&amp;gt;
+&amp;amp;lt;corners android:radius=&quot;15dp&quot;/&amp;gt; ```xml```
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;We have successfully created our all resources file for our shape drawable and now we have to attached all the resources file to a single .xml file for  we can call it in our project
 we give it a name custom_button&lt;/p&gt;
 
-&lt;p&gt;custom_button.xml
-in this xml we dont change the default attribute and in the selector we assign our button as you can see below&amp;lt;/p&amp;gt;&lt;/p&gt;
+&lt;h2 id=&quot;custom_buttonxml&quot;&gt;custom_button.xml&lt;/h2&gt;
+&lt;p&gt;in this xml we dont change the default attribute and in the selector we assign our button as you can see below&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    android:state_pressed=&quot;true&quot;
-    android:drawable=&quot;@drawable/button_pressed&quot;/&amp;gt;
-&amp;amp;lt;item
-    android:state_enabled=&quot;false&quot;
-    android:drawable=&quot;@drawable/button_disabled&quot;/&amp;gt;
-&amp;amp;lt;item
-    android:drawable=&quot;@drawable/button_default&quot;/&amp;gt; Finally we go into our Main Activity.xml and we add a button and set the background to our @drawable/custom_button and after doing this the system will take our three custom buttons as a one custom button and we will get our custom button background.then we set a switch for disable purpose. 
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;xml&lt;/code&gt;
+        android:state_pressed=”true”
+        android:drawable=”@drawable/button_pressed”/&amp;gt;
+    &amp;lt;item
+        android:state_enabled=”false”
+        android:drawable=”@drawable/button_disabled”/&amp;gt;
+    &amp;lt;item
+        android:drawable=”@drawable/button_default”/&amp;gt;
+        &lt;code class=&quot;highlighter-rouge&quot;&gt;xml&lt;/code&gt;&lt;/p&gt;
 
-android:layout_width=&quot;match_parent&quot;
-android:layout_height=&quot;match_parent&quot;
-android:gravity=&quot;center&quot;
-android:orientation=&quot;vertical&quot;
-tools:context=&quot;.MainActivity&quot;&amp;gt;
+&lt;p&gt;Finally we go into our Main Activity.xml and we add a button and set the background to our @drawable/custom_button and after doing this the system will take our three custom buttons as a one custom button and we will get our custom button background.then we set a switch for disable purpose.&lt;/p&gt;
 
-&amp;amp;lt;Button
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;xml&lt;/code&gt;
+    android:layout_width=”match_parent”
+    android:layout_height=”match_parent”
+    android:gravity=”center”
+    android:orientation=”vertical”
+    tools:context=”.MainActivity”&amp;gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;amp;lt;Button
     android:id=&quot;@+id/btn&quot;
     android:layout_width=&quot;wrap_content&quot;
     android:layout_height=&quot;wrap_content&quot;
@@ -127,17 +130,19 @@ tools:context=&quot;.MainActivity&quot;&amp;gt;
     android:layout_height=&quot;wrap_content&quot;
     android:checked=&quot;true&quot;
     android:text=&quot;Enabled&quot;
-    /&amp;gt;
+    /&amp;gt; ```xml```
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;after assigning the button and switch we go to our main activity.java file for give a behavior for our  widgets.&lt;/p&gt;
 
+&lt;hr /&gt;
+
 &lt;h2 id=&quot;main-activityjava&quot;&gt;Main Activity.JAVA&lt;/h2&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;java&lt;/code&gt;
+        final Button customButton = findViewById(R.id.btn);
+        Switch switchButton= findViewById(R.id.btnSwitch);&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    final Button customButton = findViewById(R.id.btn);
-    Switch switchButton= findViewById(R.id.btnSwitch);
-
-    customButton.setOnClickListener(new View.OnClickListener() {
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    customButton.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View view) {
            Toast.makeText(MainActivity.this,&quot;clicked&quot;, Toast.LENGTH_LONG).show();
@@ -156,5 +161,9 @@ tools:context=&quot;.MainActivity&quot;&amp;gt;
             }
         }
     });
-} } We have successfully created our shape drawable button. So Let's Test it out! So That's all for today cod3'rs i hope now you got a understanding of shape drawable and you can also use this method in your projects to create a awesome looking custom button. if you like this tutorial then make sure stay tuned for future upcoming tutorials.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">#hello_Cod3rs. in this tutorial we will learn how we can use xml files to customize our own button so open up android studio then we need to create a new resource file so for that we will go intro res &amp;gt; drawable then we will right click on the drawable folder and pick a new resources file from the new section the first option on the popup menu. as you can see below.</summary></entry></feed>
+} } ```java```
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;We have successfully created our shape drawable button. So Let’s Test it out!
+So That’s all for today cod3’rs i hope now you got a understanding of shape drawable and you can also use this method in your projects to create a awesome looking custom button.
+if you like this tutorial then make sure stay tuned for future upcoming tutorials.&lt;/p&gt;</content><author><name></name></author><summary type="html"># hello_Cod3rs in this tutorial we will learn how we can use xml files to customize our own button so open up android studio then we need to create a new resource file so for that we will go intro res &amp;gt; drawable then we will right click on the drawable folder and pick a new resources file from the new section the first option on the popup menu. as you can see below.</summary></entry></feed>
