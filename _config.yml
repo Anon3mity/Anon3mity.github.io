@@ -33,6 +33,7 @@ github_username:  Anon3m!ty
 
 collections:
   apps:
+    output: true
 # Build settings
 
 plugins:
