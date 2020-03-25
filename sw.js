@@ -1,3 +1,4 @@
+// sw.js
 
 // set names for both precache & runtime cache
 workbox.core.setCacheNameDetails({
