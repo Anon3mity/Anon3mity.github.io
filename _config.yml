@@ -56,8 +56,9 @@ workbox:
     - "about.html": # This entry aliases about/ and contact/ to about.html
         - about/
         - contact/
+        
   precache_glob_ignores: # Optional
-    - "fonts/**/*"
+    
 
 include: [".well-known"]
 
