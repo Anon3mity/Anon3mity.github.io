@@ -16,9 +16,9 @@ youtube_id: nDtzqocTXU0
                 <h1 style="font-family: 'Alegreya SC', serif;">Learn At Your Own Peace..<br></h1>
                 <p style="font-family: 'Alegreya SC', serif;"><br><i class="fa fa-sitemap"></i>&nbsp;| Veriety of
                     Topics<br></p>
-                <p><a class="btn" role="button" href="#"
+                <p><a class="btn" role="button" href="/contact/"
                         style="margin-right: 23px;background-color: #000000;font-family: 'Alegreya SC', serif;">CONTACT
-                        US</a><a class="btn btn-success" role="button" href="#"
+                        US</a><a class="btn btn-success" role="button" href="/blogs/"
                         style="font-family: 'Alegreya SC', serif;">VIEW BLOGS</a></p>
             </div>
         </div>
@@ -36,54 +36,16 @@ youtube_id: nDtzqocTXU0
 <div id="blog--s3" class="features-boxed">
     <div class="container">
         <div class="row justify-content-center features">
+            {% for post in site.posts %}
             <div class="col-sm-6 col-md-5 col-lg-4 item">
                 <div class="text-center box"><img src="/assets/img/Artboard%201.png" width="68">
-                    <h3 class="name">Works everywhere</h3>
-                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent
-                        aliquam in tellus eu.</p><button class="btn btn-success btn-sm" type="button">here&nbsp;<i
-                            class="fas fa-arrow-right"></i></button>
+                    <h3 class="name">{{ post.title }}</h3>
+                    <p class="description">{{ post.meta }}</p><a href="{{ post.url }}">
+                        <button class="btn btn-success btn-sm" type="button">here&nbsp;<i
+                            class="fas fa-arrow-right"></i></button></a>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-5 col-lg-4 item">
-                <div class="text-center box"><img src="/assets/img/Artboard%201.png" width="68">
-                    <h3 class="name">Works everywhere</h3>
-                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent
-                        aliquam in tellus eu.</p><button class="btn btn-success btn-sm" type="button">here&nbsp;<i
-                            class="fas fa-arrow-right"></i></button>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-5 col-lg-4 item">
-                <div class="text-center box"><img src="/assets/img/Artboard%201.png" width="68">
-                    <h3 class="name">Works everywhere</h3>
-                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent
-                        aliquam in tellus eu.</p><button class="btn btn-success btn-sm" type="button">here&nbsp;<i
-                            class="fas fa-arrow-right"></i></button>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-5 col-lg-4 item">
-                <div class="text-center box"><img src="/assets/img/Artboard%201.png" width="68">
-                    <h3 class="name">Works everywhere</h3>
-                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent
-                        aliquam in tellus eu.</p><button class="btn btn-success btn-sm" type="button">here&nbsp;<i
-                            class="fas fa-arrow-right"></i></button>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-5 col-lg-4 item">
-                <div class="text-center box"><img src="/assets/img/Artboard%201.png" width="68">
-                    <h3 class="name">Works everywhere</h3>
-                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent
-                        aliquam in tellus eu.</p><button class="btn btn-success btn-sm" type="button">here&nbsp;<i
-                            class="fas fa-arrow-right"></i></button>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-5 col-lg-4 item">
-                <div class="text-center box"><img src="/assets/img/Artboard%201.png" width="68">
-                    <h3 class="name">Works everywhere</h3>
-                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent
-                        aliquam in tellus eu.</p><button class="btn btn-success btn-sm" type="button">here&nbsp;<i
-                            class="fas fa-arrow-right"></i></button>
-                </div>
-            </div>
+            {% endfor %}
         </div>
     </div>
 </div>

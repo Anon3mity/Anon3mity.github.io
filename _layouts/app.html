@@ -11,33 +11,36 @@ layout: default
     <div class="container center-vertically-holder" style="margin-top:-20px;">
         <div class="row center-vertically">
             <div class="col-md-8 offset-sm-0 offset-md-2 text-center" style="margin-top: 100px;margin-bottom: 100px;">
-                <h1 style="font-family: 'Alegreya SC', serif;">Learn At Your Own Peace..<br></h1>
-                <p style="font-family: 'Alegreya SC', serif;"><br><i class="fa fa-sitemap"></i>&nbsp;| Veriety of
-                    Topics<br></p>
-                <p><a class="btn" role="button" href="#" style="margin-right: 23px;background-color: #000000;">CONTACT
-                        US</a><a class="btn btn-success" role="button" href="#"
-                        style="font-family: 'Alegreya SC', serif;">VIEW BLOGS</a></p>
+                <h1 style="font-family: 'Alegreya SC', serif;">{{ page.title }}<br></h1>
+                <p style="font-family: 'Alegreya SC', serif;"><br><i class="fa fa-sitemap"></i>&nbsp;| Apps By Anon3m!ty<br></p>
+                <p><a class="btn" role="button" href="/contact/"
+                    style="margin-right: 23px;background-color: #000000;font-family: 'Alegreya SC', serif;"><i
+                        class="fas fa-mail-bulk"></i>&nbsp; CONTACT US</a><a class="btn" role="button" href="https://play.google.com/store/apps/dev?id=5407595051200327049" target="_blank" rel="noopener"
+                        style="margin-right: 23px;background-color: #2ca049;font-family: 'Alegreya SC', serif;"><i
+                            class="fab fa-google-play"></i>&nbsp; VIEW ON</a></p>
             </div>
         </div>
     </div>
 </div>
-<div class="container text-center" id="app-img"><img src="/assets/img/ezgif.com-webp-to-jpg%20(3).jpg"><button
+<div class="container text-center" id="app-img"><img src="/assets/img/ezgif.com-webp-to-jpg%20(3).jpg"><a href="{{ page.link }}" target="_blank" rel="noopener" ><button
         class="btn btn-success" type="button" style="font-family: 'Alegreya SC', serif;">get it on&nbsp;<i
-            class="fab fa-google-play" style="color: rgb(0,0,0);"></i>&nbsp;</button></div>
-<h1 class="text-success" style="margin-left: 32px;margin-bottom: 31px;font-family: 'Alegreya SC', serif;">App Title
-    &nbsp;<i class="fas fa-long-arrow-alt-right"></i><br></h1>
+            class="fab fa-google-play" style="color: rgb(0,0,0);"></i>&nbsp;</button></a></div>
+            <div class="container">
+                <h1 class="text-success" style="margin-left: 32px;margin-bottom: 31px;font-family: 'Alegreya SC', serif;">App Title
+                    &nbsp;<i class="fas fa-long-arrow-alt-right"></i><br><span style="margin-left: 100px;"> {{ page.title }}</span></span></h1> 
+            </div>
+
 <div class="container">
     <p class="text-monospace text-center text-success" style="font-family: 'Alegreya SC';"><i
-            class="fa fa-th"></i>&nbsp;Description</p>
+            class="fa fa-th"></i>&nbsp; Short Description</p>
 </div>
-<p class="text-center text-info"
-    style="padding: 27px;margin-top: -46px;box-shadow: -1px -1px 15px #121212, 1px 1px 15px #121212;font-family: 'Alegreya SC', serif;">
-    <br>Notability lets you write as much as you want and you will never ever forgot<br><br>stay in time with precise
-    remember system with built-in dark mode so you<br><br>never hurt your eyes during the night...<br><br>build with
-    awesome features such
-    as dark mode, powerful UI - UX with lots of<br><br>cool features so try Notability now...<br><br><br></p>
-<p class="text-monospace text-center text-success" style="font-family: 'Alegreya SC', serif;"><i
-        class="fa fa-exclamation-circle"></i>&nbsp;Privacy Policy For APP_TITLE</p>
+<div class="container text-center">
+    <p class="text-info">
+        {{content }}</p>
+</div>
+
+<p class=" text-center text-success" style="font-family: 'Alegreya SC', serif;"><i
+        class="fa fa-exclamation-circle"></i>&nbsp;Privacy Policy For {{page.title}}</p>
 <p class="text-center text-info"
     style="padding: 27px;margin-top: -46px;box-shadow: -1px -1px 15px #121212, 1px 1px 15px #121212;font-family: 'Alegreya SC', serif;">
     <br>Notability lets you write as much as you want and you will never ever forgot<br><br>stay in time with precise
