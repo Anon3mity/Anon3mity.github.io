@@ -16,12 +16,12 @@ gem "jekyll", "~> 4.0.0"
 # If you have any plugins, put them here!
 gem 'jekyll-sitemap'
 gem 'jekyll-redirect-from'
-gem 'jekyll-workbox-plugin'
 gem 'jekyll-seo-tag'
 
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
   gem 'jekyll-admin'
+  gem 'jekyll-workbox-plugin'
 
 
  

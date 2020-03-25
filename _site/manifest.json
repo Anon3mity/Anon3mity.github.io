@@ -1,11 +1,6 @@
 {
     "short_name": "Anon3m!ty-IN",
     "name": "Anon3m!ty",
-    "start_url": "/index.html",
-    "background_color": "#000000",
-    "theme_color": "#000000",
-    "display": "fullscreen",
-    "orientation": "portrait",
     "icons": [
         {
             "src": "/assets/img/android-chrome-192x192.png",
@@ -16,13 +11,13 @@
             "src": "/assets/img/android-chrome-512x512.png",
             "type": "image/png",
             "sizes": "512x512"
-        },
-    
-        {
-            "src": "/assets/img/apple-touch-icon.png",
-            "type": "image/png",
-            "sizes": "180x180"
         }
-    ]
+
+    ],
+    "start_url": "/index.html",
+    "background_color": "#000000",
+    "theme_color": "#000000",
+    "display": "fullscreen",
+    "orientation": "portrait"
    
 }
