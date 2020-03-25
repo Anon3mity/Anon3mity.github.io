@@ -1,76 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://anon3mity.github.io/apps/alarmpm/</loc>
-<lastmod>2020-03-19T18:59:02+05:30</lastmod>
+<loc>http://localhost:4000/apps/alarmpm/</loc>
+<lastmod>2020-03-25T09:31:58+05:30</lastmod>
 </url>
 <url>
-<loc>https://anon3mity.github.io/apps/anon3m!ty/</loc>
-<lastmod>2020-03-19T18:59:02+05:30</lastmod>
+<loc>http://localhost:4000/apps/anon3m!ty/</loc>
+<lastmod>2020-03-25T09:31:58+05:30</lastmod>
 </url>
 <url>
-<loc>https://anon3mity.github.io/apps/cpu/</loc>
-<lastmod>2020-03-19T18:59:02+05:30</lastmod>
+<loc>http://localhost:4000/apps/cpu/</loc>
+<lastmod>2020-03-25T09:31:58+05:30</lastmod>
 </url>
 <url>
-<loc>https://anon3mity.github.io/apps/notability/</loc>
-<lastmod>2020-03-19T18:59:02+05:30</lastmod>
+<loc>http://localhost:4000/apps/notability/</loc>
+<lastmod>2020-03-25T09:31:58+05:30</lastmod>
 </url>
 <url>
-<loc>https://anon3mity.github.io/apps/pdfx/</loc>
-<lastmod>2020-03-19T18:59:02+05:30</lastmod>
+<loc>http://localhost:4000/apps/pdfx/</loc>
+<lastmod>2020-03-25T09:31:58+05:30</lastmod>
 </url>
 <url>
-<loc>https://anon3mity.github.io/apps/ridd3m/</loc>
-<lastmod>2020-03-19T18:59:02+05:30</lastmod>
+<loc>http://localhost:4000/apps/ridd3m/</loc>
+<lastmod>2020-03-25T09:31:58+05:30</lastmod>
 </url>
 <url>
-<loc>https://anon3mity.github.io/apps/tictac/</loc>
-<lastmod>2020-03-19T18:59:02+05:30</lastmod>
+<loc>http://localhost:4000/apps/tictac/</loc>
+<lastmod>2020-03-25T09:31:58+05:30</lastmod>
 </url>
 <url>
-<loc>https://anon3mity.github.io/apps/todaytask/</loc>
-<lastmod>2020-03-19T18:59:02+05:30</lastmod>
+<loc>http://localhost:4000/apps/todaytask/</loc>
+<lastmod>2020-03-25T09:31:58+05:30</lastmod>
 </url>
 <url>
-<loc>https://anon3mity.github.io/android/ui/2020/02/07/Shape-Drawable-Button.Xml-Android-Studio/</loc>
+<loc>http://localhost:4000/android/ui/2020/02/07/Shape-Drawable-Button.Xml-Android-Studio/</loc>
 <lastmod>2020-02-07T12:41:02+05:30</lastmod>
 </url>
 <url>
-<loc>https://anon3mity.github.io/about/</loc>
+<loc>http://localhost:4000/about/</loc>
 </url>
 <url>
-<loc>https://anon3mity.github.io/apps/</loc>
+<loc>http://localhost:4000/apps/</loc>
 </url>
 <url>
-<loc>https://anon3mity.github.io/blogs/</loc>
+<loc>http://localhost:4000/blogs/</loc>
 </url>
 <url>
-<loc>https://anon3mity.github.io/courses/</loc>
+<loc>http://localhost:4000/contact/</loc>
 </url>
 <url>
-<loc>https://anon3mity.github.io/</loc>
+<loc>http://localhost:4000/courses/</loc>
 </url>
 <url>
-<loc>https://anon3mity.github.io/privacy/</loc>
+<loc>http://localhost:4000/</loc>
 </url>
 <url>
-<loc>https://anon3mity.github.io/google3146bd7e5d9d7458.html</loc>
+<loc>http://localhost:4000/privacy/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/products/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/google3146bd7e5d9d7458.html</loc>
 <lastmod>2020-03-08T22:28:52+05:30</lastmod>
-</url>
-<url>
-  <loc>https://anon3mity.github.io/Notability/</loc>
-  <lastmod>2020-03-23T05:27:44+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://anon3mity.github.io/Notability/changelog/</loc>
-  <lastmod>2020-03-23T05:27:44+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://anon3mity.github.io/Notability/privacy/</loc>
-  <lastmod>2020-03-23T05:27:44+00:00</lastmod>
-  <priority>0.80</priority>
 </url>
 </urlset>
