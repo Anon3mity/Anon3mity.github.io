@@ -22,7 +22,7 @@ layout: default
         </div>
     </div>
 </div>
-<div class="container text-center" id="app-img"><img src="/assets/img/ezgif.com-webp-to-jpg%20(3).jpg"><a href="{{ page.link }}" target="_blank" rel="noopener" ><button
+<div class="container text-center" id="app-img"><img src="{{ page.img }}"><br><br><a href="{{ page.link }}" target="_blank" rel="noopener" ><button
         class="btn btn-success" type="button" style="font-family: 'Alegreya SC', serif;">get it on&nbsp;<i
             class="fab fa-google-play" style="color: rgb(0,0,0);"></i>&nbsp;</button></a></div>
             <div class="container">
@@ -33,17 +33,19 @@ layout: default
 <div class="container">
     <p class="text-monospace text-center text-success" style="font-family: 'Alegreya SC';"><i
             class="fa fa-th"></i>&nbsp; Short Description</p>
+            
 </div>
-<div class="container text-center">
-    <p class="text-info">
-        {{content }}</p>
+<div class="text-center text-primary">
+    <p style="padding: 27px;margin-top: -46px;box-shadow: -1px -1px 15px #121212, 1px 1px 15px #121212;font-family: 'Alegreya SC', serif;">
+    <br>{{ page.shortdesc }}<br><br><br></p>
+    
 </div>
 
+
 <p class=" text-center text-success" style="font-family: 'Alegreya SC', serif;"><i
-        class="fa fa-exclamation-circle"></i>&nbsp;Privacy Policy For {{page.title}}</p>
+        class="fa fa-exclamation-circle"></i>&nbsp;Privacy Policy For {{page.privacy_title}}</p>
+
+        <div class="text-center text-primary">
 <p class="text-center text-info"
     style="padding: 27px;margin-top: -46px;box-shadow: -1px -1px 15px #121212, 1px 1px 15px #121212;font-family: 'Alegreya SC', serif;">
-    <br>Notability lets you write as much as you want and you will never ever forgot<br><br>stay in time with precise
-    remember system with built-in dark mode so you<br><br>never hurt your eyes during the night...<br><br>build with
-    awesome features such
-    as dark mode, powerful UI - UX with lots of<br><br>cool features so try Notability now...<br><br><br></p>
+    <br>{{ content }}<br><br><br></p></div>
