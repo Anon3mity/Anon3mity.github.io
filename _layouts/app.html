@@ -43,9 +43,9 @@ layout: default
 
 
 <p class=" text-center text-success" style="font-family: 'Alegreya SC', serif;"><i
-        class="fa fa-exclamation-circle"></i>&nbsp;Privacy Policy For {{page.privacy_title}}</p>
+        class="fa fa-exclamation-circle"></i>&nbsp;Privacy Policy </p>
 
-        <div class="text-center text-primary">
-<p class="text-center text-info"
-    style="padding: 27px;margin-top: -46px;box-shadow: -1px -1px 15px #121212, 1px 1px 15px #121212;font-family: 'Alegreya SC', serif;">
-    <br>{{ content }}<br><br><br></p></div>
+        <button class="accordion">{{page.privacy_title}}</button>
+        <div class="panel">
+          <p>{{ content }}</p>
+        </div>
