@@ -1,10 +1,4 @@
----
-title: Free Courses To Upgrade Your Skills
-description: At Anon3m!ty We Provide Free Courses To Get You Start Your Development From Scratch "Learning Made Easy"
-layout: coursespage
----
-
-<div class="jumbotron jumbotron-fluid jumbotron-main" id="header-home-s1" style="margin-top: 102px;margin-bottom: 2px;">
+I"Ï<div class="jumbotron jumbotron-fluid jumbotron-main" id="header-home-s1" style="margin-top: 102px;margin-bottom: 2px;">
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
     <div id="particles-js">
@@ -13,28 +7,21 @@ layout: coursespage
     <div class="container center-vertically-holder" style="margin-top:-20px;">
         <div class="row center-vertically">
             <div class="col-md-8 offset-sm-0 offset-md-2 text-center" style="margin-top: 100px;margin-bottom: 100px;">
-                <h1 style="font-family: 'Alegreya SC', serif;">Learn At Your Own Peace..<br></h1>
-                <p style="font-family: 'Alegreya SC', serif;"><br><i class="fa fa-sitemap"></i>&nbsp;| Veriety of
-                    Topics<br></p>
-                <p><a class="btn" role="button" href="#"
-                        style="margin-right: 23px;background-color: #000000;font-family: 'Alegreya SC', serif;">CONTACT
-                        US</a><a class="btn btn-success" role="button" href="#"
-                        style="font-family: 'Alegreya SC', serif;">VIEW BLOGS</a></p>
+                <h1 style="font-family: 'Alegreya SC', serif;">Learn At Your Own Peace..<br /></h1>
+                <p style="font-family: 'Alegreya SC', serif;"><br /><i class="fa fa-sitemap"></i>&nbsp;| Veriety of
+                    Topics<br /></p>
+                <p><a class="btn" role="button" href="#" style="margin-right: 23px;background-color: #000000;font-family: 'Alegreya SC', serif;">CONTACT
+                        US</a><a class="btn btn-success" role="button" href="#" style="font-family: 'Alegreya SC', serif;">VIEW BLOGS</a></p>
             </div>
         </div>
     </div>
 </div>
-
-<!--
 <form class="search-form" style="margin-right: 60px;margin-left: 60px;">
     <div class="input-group" style="margin-top: -109px;">
-        <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-search"></i></span></div><input
-            class="form-control" type="text" placeholder="I am looking for.."
-            style="background-color: rgb(0,0,0);font-family: 'Alegreya SC', serif;">
-        <div class="input-group-append"><button class="btn btn-light" type="button"
-                style="background-color: rgb(17,99,180);font-family: 'Alegreya SC', serif;">Search </button></div>
+        <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-search"></i></span></div><input class="form-control" type="text" placeholder="I am looking for.." style="background-color: rgb(0,0,0);font-family: 'Alegreya SC', serif;" />
+        <div class="input-group-append"><button class="btn btn-light" type="button" style="background-color: rgb(17,99,180);font-family: 'Alegreya SC', serif;">Search </button></div>
     </div>
-</form>-->
+</form>
 <div class="features-clean" style="padding-bottom: 0;">
     <div class="container-fluid" style="background-color: #000000;">
         <div class="intro">
@@ -74,3 +61,4 @@ layout: coursespage
         </div>
     </div>
 </div>
+:ET
