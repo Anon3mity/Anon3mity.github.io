@@ -18,7 +18,7 @@ workbox.routing.setDefaultHandler(workbox.strategies.networkFirst());
 
 // let Workbox handle our precache list
 // NOTE: This will be populated by jekyll-workbox-plugin.
-workbox.precaching.precacheAndRoute([{"url":"/index.html","revision":"3a47fd91ee8b02896c3fb02491d9aea5"},{"url":"/android/ui/2020/02/07/Shape-Drawable-Button.Xml-Android-Studio-copy-2/","revision":"86513c5d448727ad543a11fa4d96879e"}]);
+workbox.precaching.precacheAndRoute([{"url":"/index.html","revision":"90d4cf46ed6a61c07f82d65ece2e8ac4"},{"url":"/android/ui/2020/02/07/Shape-Drawable-Button.Xml-Android-Studio-copy-2/","revision":"86513c5d448727ad543a11fa4d96879e"}]);
 
 // use `Stale-while-revalidate` strategy for images and fonts.
 workbox.routing.registerRoute(
