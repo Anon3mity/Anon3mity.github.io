@@ -4,7 +4,6 @@ img: "/assets/img/anon.jpg"
 link: "https://play.google.com/store/apps/details?id=io.github.anon3mity"
 layout: app
 shortdesc: we provide weekly latest updates about the latest tech trend.
-privacy_title: Privacy Policy for Anon3m!ty-lite
 ---
 
 Anon3m!ty built the [Anon3m!ty-lite app as a Free app. This SERVICE is provided by Anon3m!ty at no cost and is intended for use as is.

@@ -10,9 +10,9 @@ layout: default
             <div class="container center-vertically-holder" style="margin-top:-20px;">
                 <div class="row center-vertically">
                     <div class="col-md-8 offset-sm-0 offset-md-2 text-center" style="margin-top:100px;margin-bottom:100px;">
-                        <h1>Learn At Your Own Peace..<br></h1>
-                        <p><i class="fas fa-code"></i>&nbsp; | Veriety of Topics<br></p>
-                        <p><a class="btn btn-sm" role="button" id="header-btn" href="#">VISIT&nbsp;<i class="fas fa-blog"></i></a></p>
+                        <h1> Products.<br></h1>
+                        <p><i class="fab fa-google-play nav-icon"></i>&nbsp; | Apps by Anon3m!ty<br></p>
+                        <p><a class="btn btn-sm" role="button" id="header-btn" target="_blank" rel="noopener" href="https://play.google.com/store/apps/dev?id=5407595051200327049">VISIT PLAY STORE &nbsp;</a></p>
                     </div>
                 </div>
             </div>
@@ -21,10 +21,12 @@ layout: default
     <div class="features-boxed">
         <div class="container">
             <div class="row justify-content-center features">
+                {% for app in site.apps %}
                 <div class="col-sm-6 col-md-5 col-lg-4 item">
-                    <div class="box" style="background-color: rgb(0,0,0);"><img src="/assets/img/android-chrome-192x192.png" style="width: 64px;height: 70px;">
-                        <h3 class="name"><strong>use xml layout for ui designing</strong><br></h3><button class="btn btn-primary" type="button" style="background-color: rgb(31,64,78);">View App&nbsp;<i class="fas fa-arrow-alt-circle-right"></i></button></div>
+                    <div class="box" style="background-color: rgb(0,0,0);"><img src="{{ app.img }}" style="width: 64px;">
+                        <h3 class="name"><strong>{{ app.title }}</strong><br></h3><a href="{{ app.url }}"><button class="btn btn-primary" type="button" style="background-color: rgb(31,64,78);">View App&nbsp;<i class="fas fa-arrow-alt-circle-right"></i></button></a></div>
                 </div>
+                {% endfor %}
             </div>
         </div>
     </div>

@@ -12,16 +12,14 @@ layout: default
             <div class="row center-vertically">
                 <div class="col-md-8 offset-sm-0 offset-md-2 text-center" style="margin-top:100px;margin-bottom:100px;">
                     <h1>{{page.title}}<br></h1>
-                    <p><i class="fas fa-code"></i>&nbsp; | Veriety of Topics<br></p>
-                    <p><a class="btn btn-sm" role="button" id="header-btn" href="#">VISIT&nbsp;<i class="fas fa-blog"></i></a></p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 <ol class="breadcrumb" style="background-color: rgb(17,18,18);">
-    <li class="breadcrumb-item"><a href="#"><span>Home</span></a></li>
-    <li class="breadcrumb-item"><a href="#"><span>PAge - Name</span></a></li>
+    <li class="breadcrumb-item"><a href="/"><span>Home</span></a></li>
+    <li class="breadcrumb-item"><a href="{{ page.url }}"><span>{{ page.title }}</span></a></li>
 </ol>
 <div class="container text-center">
     <p style="color: rgb(0,87,174);"><br>{{ content }}<br><br></p>

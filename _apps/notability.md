@@ -4,7 +4,6 @@ img: "/assets/img/3.png"
 link: "https://play.google.com/store/apps/details?id=com.anon3mity.notability& pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
 layout: app
 shortdesc: Notability lets you write as much as you want and you will never ever forgot.
-privacy_title: Privacy Policy for Notability
 ---
 Anon3m!ty built the [Notability app as a Free app. This SERVICE is provided by Anon3m!ty at no cost and is intended for use as is.
 

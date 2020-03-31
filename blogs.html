@@ -13,7 +13,7 @@ layout: blogpage
                     <div class="col-md-8 offset-sm-0 offset-md-2 text-center" style="margin-top:100px;margin-bottom:100px;">
                         <h1>Learn At Your Own Peace..<br></h1>
                         <p><i class="fas fa-code"></i>&nbsp; | Veriety of Topics<br></p>
-                        <p><a class="btn btn-sm" role="button" id="header-btn" href="#">VISIT&nbsp;<i class="fas fa-blog"></i></a></p>
+                        <p><a class="btn btn-sm" role="button" id="header-btn" href="/Courses/">VISIT&nbsp;<i class="fas fa-user-graduate nav-icon"></i></a></p>
                     </div>
                 </div>
             </div>
@@ -22,11 +22,13 @@ layout: blogpage
     <div class="features-boxed">
         <div class="container">
             <div class="row justify-content-center features">
+                {% for post in site.posts %}
                 <div class="col-sm-6 col-md-5 col-lg-4 item">
                     <div class="box" style="background-color: rgb(0,0,0);"><img src="/assets/img/android-chrome-192x192.png" style="width: 64px;height: 70px;">
-                        <h3 class="name"><strong>use xml layout for ui designing</strong><br></h3>
-                        <p class="description">Shape drawable is nothing more just a collection of .xml file's with that you can create your own awesome Custom_Button as well as you can create more with that.<br></p><button class="btn btn-primary" type="button" style="background-color: rgb(31,64,78);">here&nbsp;<i class="fas fa-arrow-alt-circle-right"></i></button></div>
+                        <h3 class="name"><strong>{{post.title}}</strong><br></h3>
+                        <p class="description">{{post.meta}}<br></p><a href="{{ post.url }}"><button class="btn btn-primary" type="button" style="background-color: rgb(31,64,78);">here&nbsp;<i class="fas fa-arrow-alt-circle-right"></i></button></a></div>
                 </div>
+                {% endfor %}
             </div>
         </div>
     </div>
