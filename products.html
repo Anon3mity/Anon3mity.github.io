@@ -1,41 +1,30 @@
 ---
-title: Products by Anon3m!ty
-description: At Anon3m!ty We Provide Free Courses To Get You Start Your Development From Scratch "Learning Made Easy"
 layout: default
 ---
-
-<div class="jumbotron jumbotron-fluid jumbotron-main" id="header-home-s1" style="margin-top: 102px;margin-bottom: 2px;">
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+    <section id="site-header">
+        <div class="jumbotron jumbotron-fluid jumbotron-main"><script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+<script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
     <div id="particles-js">
-        <canvas class="particles-js-canvas-el" width="1409" height="319" style="width: 100%; height: 100%;"></canvas>
-    </div>
-    <div class="container center-vertically-holder" style="margin-top:-20px;">
-        <div class="row center-vertically">
-            <div class="col-md-8 offset-sm-0 offset-md-2 text-center" style="margin-top: 100px;margin-bottom: 100px;">
-                <h1 style="font-family: 'Alegreya SC', serif;">{{ page.title }}<br></h1>
-                <p style="font-family: 'Alegreya SC', serif;"><br><i class="fa fa-sitemap"></i>&nbsp;| Apps By Anon3m!ty<br></p>
-                <p><a class="btn" role="button" href="/contact/"
-                    style="margin-right: 23px;background-color: #000000;font-family: 'Alegreya SC', serif;"><i
-                        class="fas fa-mail-bulk"></i>&nbsp; CONTACT US</a><a class="btn" role="button" href="https://play.google.com/store/apps/dev?id=5407595051200327049" target="_blank" rel="noopener"
-                        style="margin-right: 23px;background-color: #2ca049;font-family: 'Alegreya SC', serif;"><i
-                            class="fab fa-google-play"></i>&nbsp; VIEW ON</a></p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div id="blog--s3" class="features-boxed">
-    <div class="container">
-        <div class="row justify-content-center features">
-            {% for app in site.apps %}
-            <div class="col-sm-6 col-md-5 col-lg-4 item">
-                <div class="text-center box"><img src="{{ app.img }}" width="68">
-                    <h3 class="name">{{ app.title }}</h3><a href="{{ app.url }}"><button class="btn btn-success btn-sm" type="button"
-                        style="margin-top: 11px;">here&nbsp;<i class="fas fa-arrow-right"></i></button></a>
+	<canvas class="particles-js-canvas-el" width="1409" height="319" style="width: 100%; height: 100%;"></canvas>
+	</div>
+            <div class="container center-vertically-holder" style="margin-top:-20px;">
+                <div class="row center-vertically">
+                    <div class="col-md-8 offset-sm-0 offset-md-2 text-center" style="margin-top:100px;margin-bottom:100px;">
+                        <h1>Learn At Your Own Peace..<br></h1>
+                        <p><i class="fas fa-code"></i>&nbsp; | Veriety of Topics<br></p>
+                        <p><a class="btn btn-sm" role="button" id="header-btn" href="#">VISIT&nbsp;<i class="fas fa-blog"></i></a></p>
+                    </div>
                 </div>
             </div>
-          {% endfor %}
+        </div>
+    </section>
+    <div class="features-boxed">
+        <div class="container">
+            <div class="row justify-content-center features">
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                    <div class="box" style="background-color: rgb(0,0,0);"><img src="/assets/img/android-chrome-192x192.png" style="width: 64px;height: 70px;">
+                        <h3 class="name"><strong>use xml layout for ui designing</strong><br></h3><button class="btn btn-primary" type="button" style="background-color: rgb(31,64,78);">View App&nbsp;<i class="fas fa-arrow-alt-circle-right"></i></button></div>
+                </div>
+            </div>
         </div>
     </div>
-</div>

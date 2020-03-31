@@ -2,50 +2,52 @@
 layout: default
 ---
 
-<div class="jumbotron jumbotron-fluid jumbotron-main" id="header-home-s1" style="margin-top: 102px;margin-bottom: 2px;">
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
-    <div id="particles-js">
-        <canvas class="particles-js-canvas-el" width="1409" height="319" style="width: 100%; height: 100%;"></canvas>
+<section id="site-header">
+    <div class="jumbotron jumbotron-fluid jumbotron-main"><script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+<script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+<div id="particles-js">
+<canvas class="particles-js-canvas-el" width="1409" height="319" style="width: 100%; height: 100%;"></canvas>
+</div>
+        <div class="container center-vertically-holder" style="margin-top:-20px;">
+            <div class="row center-vertically">
+                <div class="col-md-8 offset-sm-0 offset-md-2 text-center" style="margin-top:100px;margin-bottom:100px;">
+                    <h1>Learn At Your Own Peace..<br></h1>
+                    <p><i class="fas fa-code"></i>&nbsp; | Veriety of Topics<br></p>
+                    <p><a class="btn btn-sm" role="button" id="header-btn" href="#">VISIT&nbsp;<i class="fas fa-blog"></i></a></p>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="container center-vertically-holder" style="margin-top:-20px;">
-        <div class="row center-vertically">
-            <div class="col-md-8 offset-sm-0 offset-md-2 text-center" style="margin-top: 100px;margin-bottom: 100px;">
-                <h1 style="font-family: 'Alegreya SC', serif;">{{ page.title }}<br></h1>
-                <p style="font-family: 'Alegreya SC', serif;"><br><i class="fa fa-sitemap"></i>&nbsp;| Apps By Anon3m!ty<br></p>
-                <p><a class="btn" role="button" href="/contact/"
-                    style="margin-right: 23px;background-color: #000000;font-family: 'Alegreya SC', serif;"><i
-                        class="fas fa-mail-bulk"></i>&nbsp; CONTACT US</a><a class="btn" role="button" href="https://play.google.com/store/apps/dev?id=5407595051200327049" target="_blank" rel="noopener"
-                        style="margin-right: 23px;background-color: #2ca049;font-family: 'Alegreya SC', serif;"><i
-                            class="fab fa-google-play"></i>&nbsp; VIEW ON</a></p>
+</section>
+<div class="container text-center">
+    <div class="row">
+        <div class="col"><img src="/assets/img/android-chrome-192x192.png" width="120px">
+            <h1 class="text-success">App TITLE</h1><button class="btn btn-primary" type="button" style="background-color: rgb(6,146,53);margin-top: 13px;">Get It Now&nbsp;<i class="fab fa-google-play" style="color: rgb(0,0,0);"></i></button></div>
+    </div>
+</div>
+<div class="container text-center" style="margin-top: 33px;">
+    <div class="row">
+        <div class="col">
+            <h1 class="text-danger">Short Description</h1>
+            <p class="text-danger">Paragraph</p>
+        </div>
+    </div>
+</div>
+<div class="container text-center" style="margin-top: 33px;">
+    <div class="row">
+        <div class="col">
+            <div role="tablist" id="accordion-1">
+                <div class="card" id="privacy">
+                    <div class="card-header" role="tab">
+                        <h5 class="mb-0"><a data-toggle="collapse" aria-expanded="false" aria-controls="accordion-1 .item-1" href="#accordion-1 .item-1">Privacy &amp; Policy&nbsp; For AppNAME&nbsp;<i class="fas fa-info-circle" style="color: rgb(4,111,9);"></i></a></h5>
+                    </div>
+                    <div class="collapse item-1" role="tabpanel" data-parent="#accordion-1" style="background-color: #0a0909;">
+                        <div class="card-body">
+                            <p class="card-text" style="color: rgb(22,105,188);">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
-<div class="container text-center" id="app-img"><img src="{{ page.img }}"><br><br><a href="{{ page.link }}" target="_blank" rel="noopener" ><button
-        class="btn btn-success" type="button" style="font-family: 'Alegreya SC', serif;">get it on&nbsp;<i
-            class="fab fa-google-play" style="color: rgb(0,0,0);"></i>&nbsp;</button></a></div>
-            <div class="container">
-                <h1 class="text-success" style="margin-left: 32px;margin-bottom: 31px;font-family: 'Alegreya SC', serif;">App Title
-                    &nbsp;<i class="fas fa-long-arrow-alt-right"></i><br><span style="margin-left: 100px;"> {{ page.title }}</span></span></h1> 
-            </div>
-
-<div class="container">
-    <p class="text-monospace text-center text-success" style="font-family: 'Alegreya SC';"><i
-            class="fa fa-th"></i>&nbsp; Short Description</p>
-            
-</div>
-<div class="text-center text-primary">
-    <p style="padding: 27px;margin-top: -46px;box-shadow: -1px -1px 15px #121212, 1px 1px 15px #121212;font-family: 'Alegreya SC', serif;">
-    <br>{{ page.shortdesc }}<br><br><br></p>
-    
-</div>
-
-
-<p class=" text-center text-success" style="font-family: 'Alegreya SC', serif;"><i
-        class="fa fa-exclamation-circle"></i>&nbsp;Privacy Policy </p>
-
-        <button class="accordion">{{page.privacy_title}}</button>
-        <div class="panel">
-          <p>{{ content }}</p>
-        </div>

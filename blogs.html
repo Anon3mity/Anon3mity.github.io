@@ -1,54 +1,32 @@
 ---
-title: Latest Development Tricks
-description: At Anon3m!ty We upload weekly development tricks & tips to polish your skills "Learning is the key of succsess"
 layout: blogpage
-youtube_id: nDtzqocTXU0
 ---
 
-<div class="jumbotron jumbotron-fluid jumbotron-main" id="header-home-s1" style="margin-top: 102px;margin-bottom: 2px;">
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+    <section id="site-header">
+        <div class="jumbotron jumbotron-fluid jumbotron-main"><script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+<script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
     <div id="particles-js">
-        <canvas class="particles-js-canvas-el" width="1409" height="319" style="width: 100%; height: 100%;"></canvas>
-    </div>
-    <div class="container center-vertically-holder" style="margin-top:-20px;">
-        <div class="row center-vertically">
-            <div class="col-md-8 offset-sm-0 offset-md-2 text-center" style="margin-top: 100px;margin-bottom: 100px;">
-                <h1 class="text-secondary" style="font-family: 'Alegreya SC', serif;">Learn At Your Own Peace..<br></h1>
-                <p class="text-secondary" style="font-family: 'Alegreya SC', serif;"><br><i
-                        class="fa fa-sitemap"></i>&nbsp;| Veriety of Topics<br></p>
-                <p><a class="btn" role="button" href="/contact/"
-                        style="margin-right: 23px;background-color: #000000;font-family: 'Alegreya SC', serif;"><i
-                            class="fas fa-mail-bulk"></i>&nbsp; CONTACT US</a><a class="btn btn-info" role="button"
-                        href="/courses/" style="font-family: 'Alegreya SC', serif;"><i class="fas fa-user-graduate"></i>&nbsp;VIEW
-                        COURSES</a></p>
-            </div>
-        </div>
-    </div>
-</div>
-<!--
-<form class="search-form" style="margin-right: 60px;margin-left: 60px;">
-    <div class="input-group" style="margin-top: -109px;">
-        <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-search"></i></span></div><input
-            class="form-control" type="text" placeholder="I am looking for.."
-            style="background-color: rgb(0,0,0);font-family: 'Alegreya SC', serif;">
-        <div class="input-group-append"><button class="btn btn-light" type="button"
-                style="background-color: rgb(17,99,180);font-family: 'Alegreya SC', serif;">Search </button></div>
-    </div>
-</form>-->
-<div id="blog--s3" class="features-boxed">
-    <div class="container">
-        <div class="row justify-content-center features">
-            {% for post in site.posts %}
-            <div class="col-sm-6 col-md-5 col-lg-4 item">
-                <div class="text-center box"><img src="/assets/img/Artboard%201.png" width="68">
-                    <h3 class="name">{{ post.title }}</h3>
-                    <p class="description">{{ post.meta }}</p><a href="{{ post.url }}">
-                        <button class="btn btn-success btn-sm" type="button">here&nbsp;<i
-                            class="fas fa-arrow-right"></i></button></a>
+	<canvas class="particles-js-canvas-el" width="1409" height="319" style="width: 100%; height: 100%;"></canvas>
+	</div>
+            <div class="container center-vertically-holder" style="margin-top:-20px;">
+                <div class="row center-vertically">
+                    <div class="col-md-8 offset-sm-0 offset-md-2 text-center" style="margin-top:100px;margin-bottom:100px;">
+                        <h1>Learn At Your Own Peace..<br></h1>
+                        <p><i class="fas fa-code"></i>&nbsp; | Veriety of Topics<br></p>
+                        <p><a class="btn btn-sm" role="button" id="header-btn" href="#">VISIT&nbsp;<i class="fas fa-blog"></i></a></p>
+                    </div>
                 </div>
             </div>
-            {% endfor %}
+        </div>
+    </section>
+    <div class="features-boxed">
+        <div class="container">
+            <div class="row justify-content-center features">
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                    <div class="box" style="background-color: rgb(0,0,0);"><img src="/assets/img/android-chrome-192x192.png" style="width: 64px;height: 70px;">
+                        <h3 class="name"><strong>use xml layout for ui designing</strong><br></h3>
+                        <p class="description">Shape drawable is nothing more just a collection of .xml file's with that you can create your own awesome Custom_Button as well as you can create more with that.<br></p><button class="btn btn-primary" type="button" style="background-color: rgb(31,64,78);">here&nbsp;<i class="fas fa-arrow-alt-circle-right"></i></button></div>
+                </div>
+            </div>
         </div>
     </div>
-</div>
