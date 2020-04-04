@@ -38,5 +38,3 @@ As well cause we will be uploading some free coding courses to make your life ~~
 ## Lots More Comming Your Way Keep Supporting This Page
 `Thanks For Reading`
 ---
-
-{% include comments.html %}
