@@ -38,3 +38,13 @@ As well cause we will be uploading some free coding courses to make your life ~~
 ## Lots More Comming Your Way Keep Supporting This Page
 `Thanks For Reading`
 ---
+
+<div id="hyvor-talk-view"></div>
+<script type="text/javascript">
+    var HYVOR_TALK_WEBSITE = 384; // DO NOT CHANGE THIS
+    var HYVOR_TALK_CONFIG = {
+        url: https://anon3mity.github.io/2020/02/07/Learn-smarter-&-Better/,
+        id: 137
+    };
+</script>
+<script async type="text/javascript" src="//talk.hyvor.com/web-api/embed"></script>
