@@ -1,0 +1,166 @@
+I"�&<h1 id="hello_cod3rs">hello_Cod3rs</h1>
+<p>in this tutorial we will learn how we can use xml files to customize our own button
+so open up android studio then we need to create a new resource file so for that we will go intro res &gt; drawable then we will right click on the drawable folder and pick a new resources file from the new section the first option on the popup menu. as you can see below.</p>
+
+<p>we will name this file as our button_default then we hit ok after that we will have our first button_default.xml file so for this example we’ill need three .xml file’s but as for now we will work on this .xml file i will tell you  more as we go further in this tutorial.</p>
+
+<hr />
+
+<h2 id="button_defaultxml">button_default.xml</h2>
+
+<p>we change the default attribute to shape and give it another attribute android:shape=”rectangle”&gt; and then we add another attribute &lt;gradient in this we give end color and start color</p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>android:startColor="#0000ff"
+android:endColor="#fff"
+</code></pre></div></div>
+
+<p>for our gradient effect then we give some padding and a stroke,Corner’s as you can see below</p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    android:shape="rectangle"
+    &gt;
+    <span class="ni">&amp;lt;</span>gradient
+        android:startColor="#0000ff"
+        android:endColor="#fff"
+        /&gt;
+        <span class="ni">&amp;lt;</span>padding
+            android:bottom="7dp"
+            android:top="7dp"
+            android:right="7dp"
+            android:left="7dp"/&gt;
+    <span class="ni">&amp;lt;</span>stroke
+        android:width="2dp"
+        android:color="#9C27B0"/&gt;
+
+    <span class="ni">&amp;lt;</span>corners android:radius="15dp"/&gt;
+</code></pre></div></div>
+
+<p>after completing our default_button.xml we copy all the codes for our two other .Xml file’s as i mentioned above so we go to our drawable folder again and create another resource file as button_disabled and we paste our code in it. then simply we change our color’s to gray as you can see below (for creating a disabled effect).</p>
+
+<h2 id="button_disabledxml">button_disabled.xml</h2>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    android:shape="rectangle"
+    &gt;
+
+
+    <span class="ni">&amp;lt;</span>solid
+        android:color="#b6b7b5"
+        /&gt;
+
+        <span class="ni">&amp;lt;</span>padding
+            android:bottom="7dp"
+            android:top="7dp"
+            android:right="7dp"
+            android:left="7dp"/&gt;
+    <span class="ni">&amp;lt;</span>stroke
+        android:width="2dp"
+        android:color="#9C27B0"/&gt;
+
+    <span class="ni">&amp;lt;</span>corners android:radius="15dp"/&gt;
+</code></pre></div></div>
+
+<p>After that we create our 3rd resource file button_pressed.xml and again pase all code as we did earlier in the button_disabled.xml and just change the gradient color for a (pressed effect).</p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>android:startColor="#03A9F4"<span class="nt">&lt;br&gt;</span>android:endColor="#fff"<span class="nt">&lt;/pre&gt;</span>
+</code></pre></div></div>
+
+<h2 id="button_pressedxml">button_pressed.xml</h2>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    android:shape="rectangle"
+    &gt;
+
+
+    <span class="ni">&amp;lt;</span>gradient
+        android:startColor="#03A9F4"
+        android:endColor="#fff"
+        /&gt;
+
+        <span class="ni">&amp;lt;</span>padding
+            android:bottom="7dp"
+            android:top="7dp"
+            android:right="7dp"
+            android:left="7dp"/&gt;
+    <span class="ni">&amp;lt;</span>stroke
+        android:width="2dp"
+        android:color="#9C27B0"/&gt;
+
+    <span class="ni">&amp;lt;</span>corners android:radius="15dp"/&gt;
+</code></pre></div></div>
+
+<p>We have successfully created our all resources file for our shape drawable and now we have to attached all the resources file to a single .xml file for  we can call it in our project
+we give it a name custom_button</p>
+
+<h2 id="custom_buttonxml">custom_button.xml</h2>
+<p>in this xml we dont change the default attribute and in the selector we assign our button as you can see below</p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>        android:state_pressed="true"
+        android:drawable="@drawable/button_pressed"/&gt;
+    <span class="ni">&amp;lt;</span>item
+        android:state_enabled="false"
+        android:drawable="@drawable/button_disabled"/&gt;
+    <span class="ni">&amp;lt;</span>item
+        android:drawable="@drawable/button_default"/&gt;
+        ```
+
+Finally we go into our Main Activity.xml and we add a button and set the background to our @drawable/custom_button and after doing this the system will take our three custom buttons as a one custom button and we will get our custom button background.then we set a switch for disable purpose. 
+
+```xml
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity"&gt;
+
+    <span class="ni">&amp;lt;</span>Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:background="@drawable/custom_button"
+        android:text="Press Me" /&gt;
+   
+
+
+    <span class="ni">&amp;lt;</span>Switch
+        android:id="@+id/btnSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="Enabled"
+        /&gt;
+</code></pre></div></div>
+
+<p>after assigning the button and switch we go to our main activity.java file for give a behavior for our  widgets.</p>
+
+<hr />
+
+<h2 id="main-activityjava">Main Activity.JAVA</h2>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>        <span class="kd">final</span> <span class="nc">Button</span> <span class="n">customButton</span> <span class="o">=</span> <span class="n">findViewById</span><span class="o">(</span><span class="no">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">btn</span><span class="o">);</span>
+        <span class="nc">Switch</span> <span class="n">switchButton</span><span class="o">=</span> <span class="n">findViewById</span><span class="o">(</span><span class="no">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">btnSwitch</span><span class="o">);</span>
+
+        <span class="n">customButton</span><span class="o">.</span><span class="na">setOnClickListener</span><span class="o">(</span><span class="k">new</span> <span class="nc">View</span><span class="o">.</span><span class="na">OnClickListener</span><span class="o">()</span> <span class="o">{</span>
+            <span class="nd">@Override</span>
+            <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onClick</span><span class="o">(</span><span class="nc">View</span> <span class="n">view</span><span class="o">)</span> <span class="o">{</span>
+               <span class="nc">Toast</span><span class="o">.</span><span class="na">makeText</span><span class="o">(</span><span class="nc">MainActivity</span><span class="o">.</span><span class="na">this</span><span class="o">,</span><span class="s">"clicked"</span><span class="o">,</span> <span class="nc">Toast</span><span class="o">.</span><span class="na">LENGTH_LONG</span><span class="o">).</span><span class="na">show</span><span class="o">();</span>
+
+
+            <span class="o">}</span>
+        <span class="o">});</span>
+
+        <span class="n">switchButton</span><span class="o">.</span><span class="na">setOnCheckedChangeListener</span><span class="o">(</span><span class="k">new</span> <span class="nc">CompoundButton</span><span class="o">.</span><span class="na">OnCheckedChangeListener</span><span class="o">()</span> <span class="o">{</span>
+            <span class="nd">@Override</span>
+            <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onCheckedChanged</span><span class="o">(</span><span class="nc">CompoundButton</span> <span class="nc">ButtonView</span><span class="o">,</span> <span class="kt">boolean</span> <span class="n">isChecked</span><span class="o">)</span> <span class="o">{</span>
+                <span class="k">if</span> <span class="o">(</span><span class="n">isChecked</span><span class="o">)</span> <span class="o">{</span>
+                    <span class="n">customButton</span><span class="o">.</span><span class="na">setEnabled</span><span class="o">(</span><span class="kc">true</span><span class="o">);</span>
+                <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+                    <span class="n">customButton</span><span class="o">.</span><span class="na">setEnabled</span><span class="o">(</span><span class="kc">false</span><span class="o">);</span>
+                <span class="o">}</span>
+            <span class="o">}</span>
+        <span class="o">});</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>We have successfully created our shape drawable button. So Let’s Test it out!
+So That’s all for today cod3’rs i hope now you got a understanding of shape drawable and you can also use this method in your projects to create a awesome looking custom button.
+if you like this tutorial then make sure stay tuned for future upcoming tutorials.</p>
+:ET
