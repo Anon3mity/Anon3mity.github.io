@@ -29,11 +29,16 @@ twitter_username: Anon3m!ty
 github_username:  Anon3mity
 
 
-
+collections: 
+  - apps 
+  - videos
 
 collections:
   apps:
     output: true
+  videos:
+    output: true
+
 # Build settings
 
 plugins:
@@ -53,13 +58,23 @@ workbox:
   precache_glob_patterns: # Optional
     - "{js,css,fonts}/**/*.{js,css,eot,svg,ttf,woff}"
     - index.html
-    - "about.html": # This entry aliases about/ and contact/ to about.html
+    - "index.html":
         - about/
+    - "index.html":
+        - blogs/
+    - "index.html":
         - contact/
+    - "index.html":
+        - courses/
+    - "index.html":
+        - privacy/
+    - "index.html":
+        - products/
+    - "index.html":
+        - videos/
 
   precache_glob_ignores: # Optional
   - "fonts/**/*"
-  - sw.js
     
 
 include: [".well-known"]
